@@ -1,0 +1,121 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-size: 10px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url(./images/b1.jfif);
+}
+
+.navbar {
+  padding: 0 25px;
+  height: 200px;
+}
+
+.navbar-brand {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 400px;
+  height: 60px;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  padding: 10px;
+}
+
+.btn-success {
+  width: 100px;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+.container {
+  width: 60%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 50%;
+  min-width: 250px;
+  height: 380px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #f0f0f0;
+}
+.card .h1 {
+  font-size: 5rem;
+  margin: 25px 0;
+}
+
+.card p {
+  font-size: 1.8rem;
+  margin: 5px 0;
+}
+
+.card .temp {
+  font-size: 2.4rem;
+  font-weight: 500;
+  background-color: lightskyblue;
+  margin-bottom: 10px;
+}
+
+.disclaimer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  height: 50px;
+  background-color: #f8f9fa;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.6rem;
+  border-radius: 15px;
+  color: black;
+}
+
+.disclaimer a {
+  font-size: 1.6rem;
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1150px) {
+  .card .h1 {
+    font-size: 4rem;
+  }
+
+  .card p {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .card .h1 {
+    font-size: 3.5rem;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .form-control {
+    margin-top: 20px;
+    width: 200px;
+  }
+  .btn-success {
+    margin-top: 20px;
+  }
+  .card .temp {
+    font-size: 2rem;
+  }
+}
